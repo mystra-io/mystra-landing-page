@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Grid, Image } from "@chakra-ui/react";
+import Link from "next/link";
 import { CenterContainer } from "../../../shared/containers/centerContainer";
 import { LabelText } from "../../../shared/typography/labelText";
 import { TEAM_DATA } from "./team-data";
@@ -65,7 +66,7 @@ export const Team = () => {
           {TEAM_DATA.main.map((member, index) => {
             return (
               <Flex
-              key={member.name}
+                key={member.name}
                 flexDir="column"
                 ml="32px"
                 mr={index == TEAM_DATA.main.length - 1 ? "20px" : "0px"}
@@ -142,6 +143,17 @@ export const Team = () => {
                     bgPos="center"
                     bgImage={member.photo}
                   >
+                    <Link target="_blank" href={member.linkedin}>
+                      <Image
+                      cursor="pointer"
+                        pos="absolute"
+                        _hover={{ opacity: 0.7 }}
+                        right="-25px"
+                        bottom="5px"
+                        src="/assets/icons/linkedin.svg"
+                        boxSize="20px"
+                      />
+                    </Link>
                     <Image
                       pos="absolute"
                       right="5px"
@@ -185,7 +197,11 @@ export const Team = () => {
                       lineHeight="120%"
                     >
                       {member.name.split(" ").map((item) => {
-                        return <Box key={item}fontFamily="Syne">{item}</Box>;
+                        return (
+                          <Box key={item} fontFamily="Syne">
+                            {item}
+                          </Box>
+                        );
                       })}
                     </Flex>
                     <Box color="#04D7B1" maxW="110px" fontSize="12px" mt="15px">
