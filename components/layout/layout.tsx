@@ -9,10 +9,10 @@ export const Layout = ({ children }: any) => {
   return (
     <>
       <Head>
-        <meta property="og:title" content="CasperArmy" key="title" />
+        <title>Mystra</title>
         <meta
           name="description"
-          content="Casper Network community project that unites. DAO platform for creators and investors with a project incubation HUB, Decentralized Autonomous Launchpad and Venture Capital."
+          content="Mystra-community platform; Dex, Swap, Bridge, DAO & more. It provides chat to communicate between web3 wallets. Built on Casper, Ethereum, Polygon & BSC"
         />
       </Head>
       <Flex overflowX="hidden"  flexDir="column" bgImage="/assets/elements/background.png" bgSize="650px" alignItems="center" zIndex="1">
