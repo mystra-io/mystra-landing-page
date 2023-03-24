@@ -18,7 +18,7 @@ export const TicketDescription = () => {
               fontSize={{base: "28px", md: "40px"}}
               fontWeight={{base: "800", md: "500"}}
             >
-              Buy your pass to Web2
+              Buy your pass to Web3
             </Box>
             <Box
               color="#CEE5F2"
