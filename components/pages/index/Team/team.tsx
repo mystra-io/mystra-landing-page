@@ -8,14 +8,13 @@ export const Team = () => {
     <Flex
       align="center"
       padding={{ base: "80px 0px 60px", md: "150px 0px" }}
-
       flexDir="column"
     >
       <CenterContainer>
         <Flex
           justify={{ base: "center", lg: "space-between" }}
           align="flex-end"
-		  mb="10px"
+          mb="10px"
         >
           <Flex flexDir="column" align={{ base: "center", lg: "initial" }}>
             <LabelText>Contributors</LabelText>
@@ -66,6 +65,7 @@ export const Team = () => {
           {TEAM_DATA.main.map((member, index) => {
             return (
               <Flex
+              key={member.name}
                 flexDir="column"
                 ml="32px"
                 mr={index == TEAM_DATA.main.length - 1 ? "20px" : "0px"}
@@ -81,6 +81,14 @@ export const Team = () => {
                   bgPos="center"
                   bgImage={member.photo}
                 >
+                  <Image
+                    pos="absolute"
+                    bg="red"
+                    boxSize="20px"
+                    src="/assets/icons/linkedin.svg"
+                    right="-50px"
+                    bottom="-10px"
+                  />
                   <Image
                     pos="absolute"
                     right="5px"
@@ -120,7 +128,11 @@ export const Team = () => {
           >
             {TEAM_DATA.main.map((member) => {
               return (
-                <Flex flexDir="column" display={{ base: "none", md: "flex" }}>
+                <Flex
+                  key={member.name}
+                  flexDir="column"
+                  display={{ base: "none", md: "flex" }}
+                >
                   <Box
                     boxSize="88px"
                     pos="relative"
@@ -164,7 +176,7 @@ export const Team = () => {
             <Flex justify="space-between" mt="80px">
               {TEAM_DATA.others.map((member) => {
                 return (
-                  <Flex flexDir="column">
+                  <Flex key={member.name} flexDir="column">
                     <Flex
                       flexDir="column"
                       fontFamily="Syne"
@@ -173,7 +185,7 @@ export const Team = () => {
                       lineHeight="120%"
                     >
                       {member.name.split(" ").map((item) => {
-                        return <Box fontFamily="Syne">{item}</Box>;
+                        return <Box key={item}fontFamily="Syne">{item}</Box>;
                       })}
                     </Flex>
                     <Box color="#04D7B1" maxW="110px" fontSize="12px" mt="15px">

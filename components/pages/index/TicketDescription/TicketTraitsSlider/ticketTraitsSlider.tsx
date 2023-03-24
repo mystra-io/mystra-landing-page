@@ -37,7 +37,7 @@ export const TicketTraitsSlider = ({
       </Box>
 	  <Grid gap="8px" mt="25px" templateColumns={`repeat(${traits.length}, 1fr)`}>
 	  {traits.map((item, index) => {
-		  return <Box cursor="pointer" onClick={() => setCurrentTrait(index)} h="8px" bg={currentTrait == index ? "#04D7B1" : "none"} border="1px solid" borderColor="#04D7B1" borderRadius="2px"/>
+		  return <Box key={item.label} cursor="pointer" onClick={() => setCurrentTrait(index)} h="8px" bg={currentTrait == index ? "#04D7B1" : "none"} border="1px solid" borderColor="#04D7B1" borderRadius="2px"/>
 	  })}
 	  </Grid>
     </Flex>

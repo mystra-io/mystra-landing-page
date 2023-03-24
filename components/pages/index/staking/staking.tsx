@@ -73,7 +73,7 @@ export const Staking = () => {
                 textTransform="uppercase"
                 bg="radial-gradient(150% 150% at 50.21% 50%, rgba(138, 69, 251, 0) 0%, #946AED 100%)"
               >
-                Find out why it's worth it <ArrowForwardIcon />
+                Find out why it&apos;s worth it <ArrowForwardIcon />
               </Button>
             </Link>
           </Flex>

@@ -11,10 +11,7 @@ export const StartStaking = () => {
     <Grid gridGap="24px">
       <CustomHeader>How to start staking?</CustomHeader>
       <Paragraph>
-        To start delegating CSPR on our validator you will need to have a Casper
-        Signer or Ledger hardware wallet. If you don't have the official wallet 
-        please read our tutorial on how to set up a Casper Signer account 
-        to delegate or tutorial on how to delgate using Ledger.
+
       </Paragraph>
       <Grid
         templateColumns={{ base: "1fr", md: "1fr auto" }}
@@ -46,18 +43,7 @@ export const StartStaking = () => {
       </Grid>
 
       <Box pr={{ base: "initial", md: "200px" }}>
-        <Paragraph>
-          The CasperArmy validator is hosted by{" "}
-          <CustomLink href="https://www.hetzner.com">
-            www.hetzner.com.
-          </CustomLink>{" "}
-          Hetzner uses green energy-efficient servers powered by electricity
-          obtained from 100% renewable energy sources. You can read more about
-          this{" "}
-          <CustomLink href="https://www.hetzner.com/unternehmen/umweltschutz/">
-            here.
-          </CustomLink>
-        </Paragraph>
+        
       </Box>
       <Link
         href="https://cspr.live/validator/020377bc3ad54b5505971e001044ea822a3f6f307f8dc93fa45a05b7463c0a053bed"

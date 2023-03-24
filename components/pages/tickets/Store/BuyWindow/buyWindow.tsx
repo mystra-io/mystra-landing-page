@@ -181,7 +181,7 @@ export const BuyWindow = ({
         );
       } catch (switchError) {
         // This error code indicates that the chain has not been added to MetaMask.
-        if (switchError.code === 4902) {
+        if ((switchError as any).code === 4902) {
           alert("add this chain id");
         }
       }
@@ -667,7 +667,7 @@ export const BuyWindow = ({
                 disabled={isLoading}
               >
                 {currencies.map((el: any) => {
-                  return <option value={el.address}>{el.symbol}</option>;
+                  return <option key={el.address} value={el.address}>{el.symbol}</option>;
                 })}
               </Select>
             </Flex>

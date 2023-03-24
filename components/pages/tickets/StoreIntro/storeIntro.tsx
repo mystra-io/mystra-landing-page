@@ -61,7 +61,7 @@ export const StoreIntro = () => {
              USDT), BSC BEP20 (BUSD, USDC, USDT) and Polygon (USDC, USDT).
           </Paragraph>
           <Box fontWeight="bold">
-            Sign up for our newsletter so you don't miss the first round of
+            Sign up for our newsletter so you dont miss the first round of
             ticket sales!
           </Box>
         </Flex>

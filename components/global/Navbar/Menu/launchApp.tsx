@@ -241,7 +241,7 @@ export const LaunchApp = () => {
                     </Link>
                   </Box>
                 </Checkbox>
-                {showAcceptError && <Box mt="20px" fontSize="12px" color="red">By using CasperArmy's content and tools including this site, the CasperArmy platform, and the wallet connection, you need to accept our Terms & Conditions and Privacy Policy.</Box>}
+                {showAcceptError && <Box mt="20px" fontSize="12px" color="red">By using CasperArmys content and tools including this site, the CasperArmy platform, and the wallet connection, you need to accept our Terms & Conditions and Privacy Policy.</Box>}
               </Box>
               <Flex justify="space-between" color="#747474">
                 <Link

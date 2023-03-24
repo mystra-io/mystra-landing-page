@@ -34,7 +34,7 @@ export const AboutPlatform = () => {
   const [selectedModule, setSelectedModule] = useState<number>(0);
 
   return (
-    <Box id="features" margin="auto" mb={{base: "20px", md: "150px"}}>
+    <Box id="features" margin="auto" mb={{ base: "20px", md: "150px" }}>
       <CenterContainer>
         <Flex
           pt={{ base: "50px", md: "150px" }}
@@ -59,10 +59,20 @@ export const AboutPlatform = () => {
           </Box>
         </Flex>
 
-        <Grid templateRows={{base: "1fr 1fr 1fr", md:"1fr 1fr", xl: "1fr"}}templateColumns={{base: "1fr 1fr", md: "repeat(3, 1fr)", xl:  "repeat(6, 1fr)"}} gap="8px" mt="40px">
+        <Grid
+          templateRows={{ base: "1fr 1fr 1fr", md: "1fr 1fr", xl: "1fr" }}
+          templateColumns={{
+            base: "1fr 1fr",
+            md: "repeat(3, 1fr)",
+            xl: "repeat(6, 1fr)",
+          }}
+          gap="8px"
+          mt="40px"
+        >
           {modules.map((item, index) => {
             return (
               <Button
+                key={item.label}
                 h="48px"
                 fontFamily="Syne"
                 fontWeight="500"
@@ -92,14 +102,17 @@ export const AboutPlatform = () => {
         <Flex
           align="center"
           justify="center"
-          h={{base: "50vh", md: "100vh"}}
+          h={{ base: "50vh", md: "100vh" }}
           bgRepeat="no-repeat"
           bgImage="/assets/elements/about-bg.png"
-		  bgPosition={{base: "50% 50%" ,md:"50% -25%"}}
-		  bgSize={{base:"100%", md: '80%'}}
-		  
+          bgPosition={{ base: "50% 50%", md: "50% -25%" }}
+          bgSize={{ base: "100%", md: "80%" }}
         >
-          <Image src={modules[selectedModule].content} maxH="100vh"  maxW={{base: "90vw", md: "100vw"}}/>
+          <Image
+            src={modules[selectedModule].content}
+            maxH="100vh"
+            maxW={{ base: "90vw", md: "100vw" }}
+          />
         </Flex>
       </CenterContainer>
     </Box>
