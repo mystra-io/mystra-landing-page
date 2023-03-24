@@ -1,0 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #161616;
+  background-image: url("../public/assets/elements/background.png");
+
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+div {
+  background-color: transparent;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Chaney";
+  src: url("/fonts/chaney-ultraextended-webfont.woff2") format("woff2"),
+       url("/fonts/chaney-ultraextended-webfont.woff") format("woff");
+}
