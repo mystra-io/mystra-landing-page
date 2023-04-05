@@ -299,7 +299,7 @@ export const BuyWindow = ({
   useEffect(() => {
     (async () => {
       const x = await axios
-        .get("https://apiv1.casperarmy.org/GetToken?id=casper-network")
+        .get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=casper-network")
         .then((res) => {
           const priceInDollars = cryptoPrice;
           const pricePerCSPR = parseFloat(
