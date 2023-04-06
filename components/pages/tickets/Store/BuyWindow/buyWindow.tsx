@@ -300,17 +300,19 @@ export const BuyWindow = ({
     (async () => {
       const x = await axios
         .get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=casper-network")
-        .then((res) => {
+        .then((res : any) => {
           const priceInDollars = cryptoPrice;
+          console.log()
           const pricePerCSPR = parseFloat(
-            res.data[0].current_price.replace(/,/g, ".")
+            res.data[0].current_price
           );
           const priceInCSPR = priceInDollars / pricePerCSPR;
           console.log(priceInCSPR);
-          setPrice(Math.floor(priceInCSPR));
+          setPrice(Math.round(priceInCSPR));
         })
         .catch((e) => {
-          setPrice(1666);
+          console.log(e)
+          setPrice(1218);
         });
     })();
   }, [cryptoPrice]);
