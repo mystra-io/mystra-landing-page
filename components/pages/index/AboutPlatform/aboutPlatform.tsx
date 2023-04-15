@@ -2,6 +2,7 @@ import { Box, Button, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { CenterContainer } from "../../../shared/containers/centerContainer";
 import { LabelText } from "../../../shared/typography/labelText";
+import Carousel from "re-carousel";
 
 const modules = [
   {
@@ -34,8 +35,8 @@ export const AboutPlatform = () => {
   const [selectedModule, setSelectedModule] = useState<number>(0);
 
   return (
-    <Box id="features" margin="auto" mb={{ base: "20px", md: "150px" }}>
-      <CenterContainer>
+    <>
+      <Box id="features" margin="0 auto">
         <Flex
           pt={{ base: "50px", md: "150px" }}
           flexDir="column"
@@ -76,6 +77,7 @@ export const AboutPlatform = () => {
                 h="48px"
                 fontFamily="Syne"
                 fontWeight="500"
+                zIndex="1"
                 fontSize="14px"
                 borderRadius="8px"
                 onClick={() => setSelectedModule(index)}
@@ -85,6 +87,7 @@ export const AboutPlatform = () => {
                     ? "#04D7B1"
                     : "rgba(120, 120, 120, 0.64)"
                 }
+                _focus={{ outline: "none" }}
                 _hover={{
                   bg: "radial-gradient(50% 50% at 50% 50%, rgba(15, 15, 15, 0) 0%, rgba(33, 232, 201, 0.13) 100%)",
                 }}
@@ -99,7 +102,7 @@ export const AboutPlatform = () => {
             );
           })}
         </Grid>
-        <Flex
+        {/*<Flex
           align="center"
           justify="center"
           h={{ base: "50vh", md: "100vh" }}
@@ -113,8 +116,45 @@ export const AboutPlatform = () => {
             maxH="100vh"
             maxW={{ base: "90vw", md: "100vw" }}
           />
+        </Flex>*/}
+      </Box>
+      <Flex align="center" justify="center">
+        <Box  
+          h="80vh"
+          opacity="0.8"
+          w="100vh"
+          bgRepeat="no-repeat"
+          bgImage="/assets/elements/about-bg.png"
+          bgPosition="center"
+          bgSize='cover'
+          pos="absolute"
+          margin="auto"
+        ></Box>
+        <Flex
+          w="100vw"
+          h="80vh"
+          mt={{ base: "20px", md: "40px" }}
+          mb={{ base: "20px", md: "60px" }}
+          pos="relative"
+          left={`${selectedModule * 100}%`}
+          transition="0.4s"
+        >
+          {modules.map((mod, index) => {
+            return (
+              <Flex
+                right={`${index * 100}%`}
+                pos="absolute"
+                w="100%"
+                h="100%"
+                align="center"
+                justify="center"
+              >
+                <Image src={mod.content} maxH="120%" />
+              </Flex>
+            );
+          })}
         </Flex>
-      </CenterContainer>
-    </Box>
+      </Flex>
+    </>
   );
 };
