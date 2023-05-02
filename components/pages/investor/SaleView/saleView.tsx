@@ -134,7 +134,7 @@ export const SaleView = ({ amount }: { amount: number }) => {
                   fontSize="16px"
                   lineHeight="24px"
                 >
-                  {Math.ceil(amount * 0.1)} tickets
+                 tickets: {Math.ceil(amount * 0.1)}
                 </Box>
               </Flex>
               <Flex fontFamily="Sora" gap="10px">
