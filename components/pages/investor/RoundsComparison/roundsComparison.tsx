@@ -50,7 +50,7 @@ export const RoundsComparison = () => {
                     </Box>
                     <Box fontSize="12px" mt="18px" fontWeight="bold">PUBLIC SALE</Box>
                     <Box fontSize='24px' mt="6px" fontWeight="bold"><Box display="inline" color="#04D7B1">$</Box>{round.price}</Box>
-                    <Box fontFamily="Syne" mt="6px" fontSize='12px' fontWeight="bold">{round.amount} tickets</Box>
+                    <Box fontFamily="Syne" mt="6px" fontSize='12px' fontWeight="bold">tickets: {round.amount}</Box>
                   </Flex>
                   <Box fontSize='24px' fontWeight="bold"><Box display="inline" color="#04D7B1">X</Box>{round.x}</Box>
                 </Flex>
