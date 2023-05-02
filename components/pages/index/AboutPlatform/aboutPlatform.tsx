@@ -119,14 +119,14 @@ export const AboutPlatform = () => {
         </Flex>*/}
       </Box>
       <Flex align="center" justify="center">
-        <Box  
+        <Box
           h="80vh"
           opacity="0.8"
           w="100vh"
           bgRepeat="no-repeat"
           bgImage="/assets/elements/about-bg.png"
           bgPosition="center"
-          bgSize='cover'
+          bgSize="cover"
           pos="absolute"
           margin="auto"
         ></Box>

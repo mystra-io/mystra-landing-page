@@ -33,7 +33,7 @@ export const RoundsComparison = () => {
           >
             {ROUNDS.map((round) => {
               return (
-                <Flex align="center" flexDir="column" gap="20px">
+                <Flex key={round.number} align="center" flexDir="column" gap="20px">
                   <Flex
                     fontFamily="Sora"
                     w={{ base: "150px", md: "100%" }}

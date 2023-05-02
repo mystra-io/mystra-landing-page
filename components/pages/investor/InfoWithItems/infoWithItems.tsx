@@ -22,9 +22,9 @@ export const InfoWithItems = ({
         </Flex>
         <Grid mt="20px" templateColumns={{base:  "1fr",md:"1fr 1fr"}} columnGap="60px">
           <Flex flexDir="column" gap="20px">
-            {items.slice(0, Math.floor(items.length / 2) + 1).map((item) => {
+            {items.slice(0, Math.floor(items.length / 2) + 1).map((item, index) => {
               return (
-                <Grid fontSize='12px' color="#CEE5F2" templateColumns="auto 1fr" gap="20px">
+                <Grid key={index + "item"} fontSize='12px' color="#CEE5F2" templateColumns="auto 1fr" gap="20px">
                   <Box mt="10px" w="16px" h="4px" bg="#81D9BE"></Box>
                   {item}
                 </Grid>
@@ -34,9 +34,9 @@ export const InfoWithItems = ({
           <Flex flexDir="column" gap="20px">
             {items
               .slice(Math.floor(items.length / 2) + 1, items.length)
-              .map((item) => {
+              .map((item, index) => {
                 return (
-                  <Grid color="#CEE5F2" templateColumns="auto 1fr" fontSize='12px' gap="20px">
+                  <Grid key={index + "item"} color="#CEE5F2" templateColumns="auto 1fr" fontSize='12px' gap="20px">
                     <Box mt="10px" w="16px" h="4px" bg="#81D9BE"></Box>
                     {item}
                   </Grid>
