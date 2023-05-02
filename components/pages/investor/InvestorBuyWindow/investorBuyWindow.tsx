@@ -327,8 +327,8 @@ export const InvestorBuyWindow = ({
     if (newAmount < 100) {
       setAmount(100);
     }
-    if (newAmount > 999999) {
-      setAmount(999999);
+    if (newAmount > 500) {
+      setAmount(500);
     }
   };
 
@@ -602,7 +602,7 @@ export const InvestorBuyWindow = ({
                 justify="center"
                 zIndex="1"
                 onClick={() =>
-                  amount < 999999 ? setAmount(amount + 100) : setAmount(999999)
+                  amount < 500 ? setAmount(amount + 100) : setAmount(500)
                 }
               >
                 <Box fontSize="30px" color="#04D7B1" mb="5px">
