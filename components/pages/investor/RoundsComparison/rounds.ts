@@ -32,7 +32,7 @@ export const ROUNDS = [
   {
     number: 6,
     price: 350,
-    amount: "Limited by DAO,
+    amount: "Limited by DAO",
     x: 11.66,
   },
 ];
