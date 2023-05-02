@@ -144,6 +144,7 @@ export const AboutPlatform = () => {
               <Flex
                 right={`${index * 100}%`}
                 pos="absolute"
+                key={index + "item"}
                 w="100%"
                 h="100%"
                 align="center"
