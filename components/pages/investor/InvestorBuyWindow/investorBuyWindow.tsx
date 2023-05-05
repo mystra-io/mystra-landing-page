@@ -571,7 +571,7 @@ export const InvestorBuyWindow = ({
                 zIndex="1"
                 _hover={{ bg: "rgba(255,255,255,0.1)" }}
                 onClick={() =>
-                  amount >= 200 ? setAmount(amount - 100) : setAmount(100)
+                  amount >= 200 ? setAmount(amount - 20) : setAmount(100)
                 }
               >
                 <Box fontSize="40px" mb="7px" color="gray">
@@ -602,7 +602,7 @@ export const InvestorBuyWindow = ({
                 justify="center"
                 zIndex="1"
                 onClick={() =>
-                  amount < 500 ? setAmount(amount + 100) : setAmount(500)
+                  amount < 500 ? setAmount(amount + 20) : setAmount(500)
                 }
               >
                 <Box fontSize="30px" color="#04D7B1" mb="5px">
