@@ -54,7 +54,7 @@ export const TICKET_ABI = [
 			{
 				"indexed": false,
 				"internalType": "address",
-				"name": "buyer",
+				"name": "minter",
 				"type": "address"
 			},
 			{
