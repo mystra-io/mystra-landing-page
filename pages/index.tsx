@@ -130,9 +130,9 @@ const Home: NextPage = () => {
       <FAQ
         questions={[
           {
-            question: "How long will ticket sales last?",
+            question: "How long will ticket mints last?",
             answer:
-              "Ticket sale time is not limited. Tickets will be on sale until the ticket pool is exhausted. You will be able to track the number of available tickets on the ticket minting platform.",
+              "Ticket minting time is not limited. Tickets will be available until the ticket pool is exhausted. You will be able to track the number of available tickets on the ticket minting platform.",
           },
           {
             question: "Why is a Mystra ticket required?",
@@ -148,19 +148,19 @@ const Home: NextPage = () => {
           },
           {
             question:
-              "How many tickets can I mint? Can I resell my ticket?",
+              "How many tickets can I mint? Can I send my ticket?",
             answer:
-              "Each user can mint a maximum of 100 tickets. Tickets are transferable, i.e., you can resell them to another user.",
+              "Each user can mint a maximum of 100 tickets. Tickets are transferable, i.e., you can send them to another user.",
           },
           {
-            question: "What if not all tickets are sold?",
+            question: "What if not all tickets are minted?",
             answer:
-              "The quantity of tickets sold does not affect the timing of the launch of the platform.",
+              "The quantity of minted tickets does not affect the timing of the launch of the platform.",
           },
           {
             question: "Why is a round six ticket so expensive?",
             answer:
-              "The first five rounds of ticket sales are priced below the regular price. The quantity of tickets in round six is unlimited.",
+              "The first five rounds of ticket mint are priced below the regular price. The quantity of tickets in round six is limited by DAO.",
           },
 
           {
