@@ -411,7 +411,7 @@ export const InvestorBuyWindow = ({
             await txOne.wait();
           } catch (error) {
             setError(
-              "Error occured. Check your balance or try other payment method."
+              "Error occured. Check your balance or try other allocation method."
             );
           } finally {
             setIsLoading(false);
@@ -727,10 +727,10 @@ export const InvestorBuyWindow = ({
                 isLoading ? (
                   <Spinner boxSize="20px" color="red" />
                 ) : (
-                  "Proceed to payment"
+                  "Proceed allocation"
                 )
               ) : (
-                "Proceed to payment"
+                "Proceed allocation"
               )}
             </Button>
           ) : (
