@@ -31,8 +31,8 @@ export const PassiveIncome = () => {
           <Paragraph>
             1. Receive <Text display="inline" color="white">
               points
-            </Text> to gain better opportunities for purchasing new
-            CasperArmy products, such as CasperArmyNFT.
+            </Text> to gain better opportunities for acquiring new
+            Mystra products, such as CasperArmyNFT.
           </Paragraph>
           <Paragraph>
             2. Gain a voice in the {" "}
