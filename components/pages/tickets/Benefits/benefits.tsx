@@ -25,7 +25,7 @@ const benefitList: Benefit[] = [
   {
     title: "More points",
     description:
-      "Each ticket is assigned a fixed amount of points. Increase your points by buying more tickets.",
+      "Each ticket is assigned a fixed amount of points. Increase your points by minting more tickets.",
   },
   {
     title: "CasperArmy NFT",
