@@ -18,7 +18,7 @@ export const TicketDescription = () => {
               fontSize={{base: "28px", md: "40px"}}
               fontWeight={{base: "800", md: "500"}}
             >
-              Buy your pass to Web3
+              Get your pass to Web3
             </Box>
             <Box
               color="#CEE5F2"
@@ -57,7 +57,7 @@ export const TicketDescription = () => {
                 {
                   label: "More Points",
                   content:
-                    "Each ticket is assigned a fixed amount of points. Increase your points by buying more tickets.",
+                    "Each ticket is assigned a fixed amount of points. Increase your points by minting more tickets.",
                 },
                
                 {
