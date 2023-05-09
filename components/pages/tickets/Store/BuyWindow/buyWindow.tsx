@@ -399,7 +399,7 @@ export const BuyWindow = ({
 
           if (Number(ticketsBoughtByUser) + Number(amount) > 100) {
             setError(
-              `Exceeded limit per wallet. You can buy ${
+              `Exceeded limit per wallet. You can mint ${
                 100 - ticketsBoughtByUser
               } tickets more`
             );
