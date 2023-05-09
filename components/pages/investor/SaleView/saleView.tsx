@@ -162,7 +162,7 @@ export const SaleView = ({ amount }: { amount: number }) => {
                   fontSize="16px"
                   lineHeight="24px"
                 >
-                  48h from purchase
+                  48h from mint
                 </Box>
               </Flex>
             </Flex>
