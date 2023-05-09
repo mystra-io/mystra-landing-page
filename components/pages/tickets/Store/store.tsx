@@ -83,7 +83,7 @@ rgba(18, 18, 18, 0.7)
           padding={{base :"33px 27px 49px 27px", lg: "55px 66px 66px 66px"}}
         >
           <Box fontSize="18px" fontWeight="700">
-            Buy NFT Ticket - ROUND {currentRound}
+            Mint NFT Ticket - ROUND {currentRound}
           </Box>
           <Box fontSize="14px" mt="16px">
             Your minted NFTs on Casper appear on your wallet within{" "}
