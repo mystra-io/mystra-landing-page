@@ -61,7 +61,7 @@ export const SaleView = ({ amount }: { amount: number }) => {
             <Pointer />
             <Flex flexDir="column" fontFamily="Sora">
               <Box fontSize="16px" lineHeight="24px">
-                Total payment
+                Total allocation
               </Box>
               <Box
                 color="#04D7B1"
