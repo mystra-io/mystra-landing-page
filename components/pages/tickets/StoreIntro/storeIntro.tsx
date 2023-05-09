@@ -49,15 +49,15 @@ export const StoreIntro = () => {
           >
             SALES PROCESS
           </Box>
-          <CustomHeader>Simple ticket purchasing interface</CustomHeader>
+          <CustomHeader>Simple ticket minting interface</CustomHeader>
           <Paragraph>
-            Once the countdown to the start of the ticket sale has ended, a
+            Once the countdown to the start of the ticket mint has ended, a
             user-friendly interface will appear on the website, select the
-            number of tickets, payment network and click on the buy button.
+            number of tickets, select network and click on the mint button.
           </Paragraph>
           <Paragraph>
-            To meet the needs of the users, in addition to paying with Casper
-            (CSPR) the sale will also be available on the ERC20 network (USDC,
+            To meet the needs of the users, in addition to minting with Casper
+            (CSPR) the mint will also be available on the ERC20 network (USDC,
              USDT), BSC BEP20 (BUSD, USDC, USDT) and Polygon (USDC, USDT).
           </Paragraph>
           <Box fontWeight="bold">
