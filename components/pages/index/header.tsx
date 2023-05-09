@@ -82,12 +82,12 @@ export const CreatorHeadingAddon = () => (
     <Link href="/tickets">
       <Grid>
         <HeaderButton>
-          Buy a Call-Up Ticket
+          Mint a NFT Ticket
           <Image src={IconAssets.arrowRight} />
         </HeaderButton>
       </Grid>
     </Link>
-    <Link href="https://docs.casperarmy.org/docs/MEMBERSHIP/4.1-For-creators">
+    <Link href="https://docs.mystra.io/docs/MEMBERSHIP/4.1-For-creators">
       <Grid>
         <HeaderButton singleItem ghost>
           Become a creator
