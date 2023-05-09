@@ -59,11 +59,11 @@ const Home: NextPage = () => {
           stepList={[
             {
               content:
-                "By purchasing a ticket, you secure lifetime access to the platform at a lower price and earn extra points that increase your chance of winning the CasperArmyNFT airdrop.",
-              heading: "Purchase a NFT Ticket",
+                "By minting a ticket, you secure lifetime access to the platform at a lower price and earn extra points that increase your chance of winning the CasperArmyNFT airdrop.",
+              heading: "Mint a NFT Ticket",
               index: 1,
               label: "USER ACCESS BY CALL-UP TICKET",
-              buttonText: "BUY YOUR OWN TICKET",
+              buttonText: "MINT YOUR OWN TICKET",
               image: ElementAssets.tickets,
               soon: false,
               reversed: false,
@@ -132,25 +132,25 @@ const Home: NextPage = () => {
           {
             question: "How long will ticket sales last?",
             answer:
-              "Ticket sale time is not limited. Tickets will be on sale until the ticket pool is exhausted. You will be able to track the number of available tickets on the ticket purchasing platform.",
+              "Ticket sale time is not limited. Tickets will be on sale until the ticket pool is exhausted. You will be able to track the number of available tickets on the ticket minting platform.",
           },
           {
             question: "Why is a Mystra ticket required?",
             answer:
-              "The ticket is the basic key to access the resources of the Mystra platform. Only ticket holders will have unlocked platform functionalities, i.e. the ability to participate in Venture Capital investments of incubated projects, or will be able to participate in airdrop and purchase CasperArmyNFT and many others.",
+              "The ticket is the basic key to access the resources of the Mystra platform. Only ticket holders will have unlocked platform functionalities, i.e. the ability to participate in Venture Capital investments of incubated projects, or will be able to participate in airdrop and mint CasperArmyNFT and many others.",
           },
 
           {
             question:
               "I have a ticket from round one. Is it different from a ticket from another round?",
             answer:
-              "Each ticket is the same and is assigned the same number of points. The only difference is the price - the earlier the round of ticket purchase the lower the price.",
+              "Each ticket is the same and is assigned the same number of points. The only difference is the price - the earlier the round of ticket mint the lower the price.",
           },
           {
             question:
-              "How many tickets can I purchase? Can I resell my ticket?",
+              "How many tickets can I mint? Can I resell my ticket?",
             answer:
-              "Each user can purchase a maximum of 100 tickets. Tickets are transferable, i.e., you can resell them to another user.",
+              "Each user can mint a maximum of 100 tickets. Tickets are transferable, i.e., you can resell them to another user.",
           },
           {
             question: "What if not all tickets are sold?",
