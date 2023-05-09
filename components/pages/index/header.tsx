@@ -30,7 +30,7 @@ export const IndexHeadingAddon = () => (
     <Link href="/tickets">
       <Grid>
         <HeaderButton>
-          Purchase a Call-Up Ticket
+          Mint a NFT Ticket
           <Image src={IconAssets.arrowRight} />
         </HeaderButton>
       </Grid>
