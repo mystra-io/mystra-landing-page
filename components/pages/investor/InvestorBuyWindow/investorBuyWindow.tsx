@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Checkbox,
   Flex,
   Grid,
   GridItem,
@@ -169,6 +170,7 @@ export const InvestorBuyWindow = ({
   const [ticketAddress, setTicketAddress] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
   const [balance, setBalance] = useState<number | null>(null);
+  const [termsAgreed, setTermsAgreed] = useState<boolean>(false);
 
   const switchNetwork = async (newChainId: number) => {
     const currentChainId = 0;
@@ -714,10 +716,12 @@ export const InvestorBuyWindow = ({
           </Grid>
         </Flex>
         <Flex mt="20px" flexDir="column">
+          <Checkbox colorScheme="purple" mt="20px" onChange={(e) => setTermsAgreed(e.target.checked)}>I have read and agreed to <Link color="#04D7B1" target="_blank" href="https://docs.mystra.io/docs/what-is-mystra/1.7-Terms-of-use">Terms and Conditions </Link></Checkbox>
           {isEVM ? (
             <Button
               opacity={chainId == selectedNetwork ? "1" : "0.5"}
               cursor={chainId == selectedNetwork ? "pointer" : "default"}
+              disabled={!termsAgreed}
               h="64px"
               mt="20px"
               color="black"
@@ -734,7 +738,7 @@ export const InvestorBuyWindow = ({
               )}
             </Button>
           ) : (
-            <Button h="64px" mt="20px" color="black" onClick={payWithCasper}>
+            <Button   disabled={!termsAgreed} h="64px" mt="20px" color="black" onClick={payWithCasper}>
               Mint with Casper
             </Button>
           )}
