@@ -12,7 +12,7 @@ export const RoundsComparison = () => {
           fontSize="24px"
           textTransform="uppercase"
         >
-          Public Sale Rounds And ROI relative to the PUBLIC SALE ROUNDS
+          Public Sale Rounds And ROI relative to the PUBLIC MINT ROUNDS
         </Flex>
         <Flex
           maxW="90vw"
@@ -48,7 +48,7 @@ export const RoundsComparison = () => {
                     <Box fontSize="12px">
                       ROUND <Box display="inline" fontWeight="bold">{round.number}</Box>
                     </Box>
-                    <Box fontSize="12px" mt="18px" fontWeight="bold">PUBLIC SALE</Box>
+                    <Box fontSize="12px" mt="18px" fontWeight="bold">PUBLIC MINT</Box>
                     <Box fontSize='24px' mt="6px" fontWeight="bold"><Box display="inline" color="#04D7B1">$</Box>{round.price}</Box>
                     <Box fontFamily="Syne" mt="6px" fontSize='12px' fontWeight="bold">tickets: {round.amount}</Box>
                   </Flex>
