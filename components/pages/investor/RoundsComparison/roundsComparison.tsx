@@ -12,7 +12,7 @@ export const RoundsComparison = () => {
           fontSize="24px"
           textTransform="uppercase"
         >
-          Public Sale Rounds And ROI relative to the PUBLIC MINT ROUNDS
+          Public Mint Rounds And ROI relative to the PUBLIC MINT ROUNDS
         </Flex>
         <Flex
           maxW="90vw"
