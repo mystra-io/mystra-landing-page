@@ -57,7 +57,7 @@ export const Requirements = () => {
           CasperArmyNFT
         </CustomLink>{" "}
         airdrop. If you’re unsuccessful in winning the CasperArmyNFT airdrop,
-        those with the most points will qualify to buy an NFT through the BUY
+        those with the most points will qualify to mint an NFT through the BUY
         NOW auction. The remaining eligible users will enter the NFT sale round
         via limited time bidding. Ticket airdrop winners will be announced prior
         to the start of ticket sales.
