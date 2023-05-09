@@ -65,7 +65,7 @@ export const PageHeader = () => {
                   textTransform="uppercase"
                   bg="radial-gradient(150% 150% at 50.21% 50%, rgba(138, 69, 251, 0) 0%, #946AED 100%)"
                 >
-                  Buy a NFT Ticket <ArrowForwardIcon />
+                  Mint a NFT Ticket <ArrowForwardIcon />
                 </Button>
               </Link>
               <Link target="_blank" href="https://docs.mystra.io/docs/MEMBERSHIP/4.2-For-investors">
