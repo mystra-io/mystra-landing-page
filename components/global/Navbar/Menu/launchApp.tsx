@@ -258,7 +258,7 @@ export const LaunchApp = () => {
                   textDecoration="underline"
                   fontWeight="500"
                 >
-                  Read more about payments
+                  Read more about mints
                 </Link>
               </Flex>
             </Grid>
