@@ -625,7 +625,7 @@ export const BuyWindow = ({
             alignItems={{ base: "center", xl: "flex-end" }}
             justifyContent="flex-end"
           >
-            <StoreHeader>Total sum to pay</StoreHeader>
+            <StoreHeader>Total</StoreHeader>
             <Flex alignItems="flex-end" fontWeight="700" mt="15px" gap="6px">
               <Box fontSize="44px" lineHeight="100%">
                 {symbol != "CSPR" ? amount * cryptoPrice : amount * price}
@@ -705,15 +705,15 @@ export const BuyWindow = ({
                 isLoading ? (
                   <Spinner boxSize="20px" color="red" />
                 ) : (
-                  "Proceed to payment"
+                  "Proceed to mint"
                 )
               ) : (
-                "Proceed to payment"
+                "Proceed to mint"
               )}
             </Button>
           ) : (
             <Button h="64px" mt="20px" color="black" onClick={payWithCasper}>
-              Pay with Casper
+              Mint with Casper
             </Button>
           )}
           {error && (
