@@ -86,7 +86,7 @@ rgba(18, 18, 18, 0.7)
             Buy NFT Ticket - ROUND {currentRound}
           </Box>
           <Box fontSize="14px" mt="16px">
-            Your purchased NFTs on Casper appear on your wallet within{" "}
+            Your minted NFTs on Casper appear on your wallet within{" "}
             <Box color="#04D7B1" display="inline">
               24 hours
             </Box>
