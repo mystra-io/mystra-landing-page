@@ -617,7 +617,7 @@ export const InvestorBuyWindow = ({
             alignItems={{ base: "center", xl: "flex-end" }}
             justifyContent="flex-end"
           >
-            <StoreHeader>Price per ticket</StoreHeader>
+            <StoreHeader>Mint charge per ticket</StoreHeader>
             <Flex alignItems="flex-end" fontWeight="700" mt="15px" gap="6px">
               <Box fontSize="44px" lineHeight="100%">
                 {cryptoPrice}
