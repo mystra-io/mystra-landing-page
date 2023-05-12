@@ -1,16 +1,32 @@
 {
-	"name": "MYSTRA-TICKET",
-	"description": "Gain access to the mystra.io platform, earn points, and receive allocations in incubated projects. Ticket holders have full access to platform functionalities and the right to vote in DAO decisions regarding the development of the platform and incubated projects. Tickets can optionally be burned to exchange them for MYSTRA platform tokens.",
-	"image": "https://mystra.io/ticket.jpg",
-	"edition": 1,
-	"attributes": [
-		{
-			"Platform Access": "Full",
-			"Points Weight": 100,
-			"Voting Rights": true,
-			"Burnable": true,
-			"Transferable": true,
-			"Resalable": true
-		}
-	]
+   "name":"MYSTRA-TICKET",
+   "description":"Gain access to the mystra.io platform, earn points, and receive allocations in incubated projects. Ticket holders have full access to platform functionalities and the right to vote in DAO decisions regarding the development of the platform and incubated projects. Tickets can optionally be burned to exchange them for MYSTRA platform tokens.",
+   "image":"https://mystra.io/ticket.jpg",
+   "edition":1,
+   "attributes":[
+      {
+         "trait_type":"Platform Access",
+         "value":"Full"
+      },
+      {
+         "trait_type":"Points Weight",
+         "value":100
+      },
+      {
+         "trait_type":"Voting Rights",
+         "value":true
+      },
+      {
+         "trait_type":"Burnable",
+         "value":true
+      },
+      {
+         "trait_type":"Transferable",
+         "value":true
+      },
+      {
+         "trait_type":"Resalable",
+         "value":true
+      }
+   ]
 }
