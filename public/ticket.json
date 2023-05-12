@@ -14,19 +14,19 @@
       },
       {
          "trait_type":"Voting Rights",
-         "value":true
+         "value":"True"
       },
       {
          "trait_type":"Burnable",
-         "value":true
+         "value":"True"
       },
       {
          "trait_type":"Transferable",
-         "value":true
+         "value":"True"
       },
       {
          "trait_type":"Resalable",
-         "value":true
+         "value":"True"
       }
    ]
 }
