@@ -130,7 +130,7 @@ const NETWORK_DATA = {
     currencies: [{ symbol: "CSPR", address: "address" }],
   },
   56: {
-    address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    address: "0xc3e9D052720aEe3E0AcE5209F9d3BDACaDf30AbD",
     name: "BSC",
     currencies: [
       {
