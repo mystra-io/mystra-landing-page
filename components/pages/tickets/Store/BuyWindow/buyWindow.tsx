@@ -442,6 +442,7 @@ export const BuyWindow = ({
           }, 3000);
         }
       } catch (e) {
+        console.log(e)
         setIsLoading(false);
       }
       setIsLoading(false);
