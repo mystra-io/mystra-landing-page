@@ -60,7 +60,7 @@ export const RoundItem = ({
       </Flex>
       <Flex flexDir="column" gap="8px">
         {
-          <Box pos="relative" w={{base: "auto", md: "140px"}} h="4px" bg="#4B4B4B">
+          <Box pos="relative" w={{base: "auto", md: "250px"}} h="4px" bg="#4B4B4B">
             <Box
               bg="#04D7B1"
               w={`${max != 0 ? percentCompleted * 100 : 0}%`}

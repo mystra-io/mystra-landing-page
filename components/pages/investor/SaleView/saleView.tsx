@@ -27,7 +27,7 @@ export const SaleView = ({ amount }: { amount: number }) => {
                 fontSize="16px"
                 lineHeight="24px"
               >
-                30 USD
+                33 USD
               </Box>
             </Flex>
           </Flex>
@@ -71,7 +71,7 @@ export const SaleView = ({ amount }: { amount: number }) => {
                 fontSize="16px"
                 lineHeight="24px"
               >
-                {amount * 30} USD
+                {amount * 33} USD
               </Box>
             </Flex>
           </Flex>

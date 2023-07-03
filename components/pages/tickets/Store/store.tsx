@@ -102,44 +102,29 @@ rgba(18, 18, 18, 0.7)
             />
             <RoundItem
               index={2}
-              price={125}
+              price={80}
               percent={65}
-              max={1000}
+              max={4500}
               currentSold={totalSold}
               previousMax={2000}
             />
             <RoundItem
               index={3}
-              price={200}
+              price={130}
               percent={43}
-              max={1000}
+              max={8500}
               currentSold={totalSold}
-              previousMax={3000}
+              previousMax={6500}
             />
             <RoundItem
               index={4}
-              price={250}
+              price={230}
               percent={29}
-              max={1000}
+              max={12500}
               currentSold={totalSold}
-              previousMax={4000}
+              previousMax={1000}
             />
-            <RoundItem
-              index={5}
-              price={300}
-              percent={15}
-              max={1000}
-              currentSold={totalSold}
-              previousMax={5000}
-            />
-            <RoundItem
-              index={6}
-              price={350}
-              percent={75}
-              max={0}
-              currentSold={totalSold}
-              previousMax={6000}
-            />
+            
           </Flex>
           <BuyWindow
             currentRound={currentRound}

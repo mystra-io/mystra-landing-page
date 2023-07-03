@@ -392,7 +392,7 @@ export const InvestorBuyWindow = ({
           );
 
           const decimals = await paymentContract.decimals();
-          const price = 30;
+          const price = 33;
 
           const userAddress = await provider.getSigner().getAddress();
           const userBalance = await paymentContract.balanceOf(userAddress);

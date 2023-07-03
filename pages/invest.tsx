@@ -67,7 +67,7 @@ const Home: NextPage = () => {
       <InvestorBuyWindow
         currentDiscount={0}
         currentRound={0}
-        cryptoPrice={30}
+        cryptoPrice={33}
         setAmountGot={() => {}}
         amount={amount}
         setAmount={setAmount}
