@@ -96,8 +96,36 @@ const NETWORK_DATA = {
       },
     ],
   },
-  137: {
+  42161: {
     address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    name: "ARBITRUM",
+    currencies: [
+      {
+        symbol: "USDT",
+        address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+      },
+      {
+        symbol: "USDC",
+        address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      },
+    ],
+  },
+  25: {
+    address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    name: "CRONOS",
+    currencies: [
+      {
+        symbol: "USDT",
+        address: "0x66e428c3f67a68878562e79A0234c1F83c208770",
+      },
+      {
+        symbol: "USDC",
+        address: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+      },
+    ],
+  },
+  137: {
+    address: "0x8b536DB22a546f1B07948A5C35c1688aB0f3eB9c",
     name: "POLYGON",
     currencies: [
       {
@@ -299,19 +327,19 @@ export const BuyWindow = ({
   useEffect(() => {
     (async () => {
       const x = await axios
-        .get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=casper-network")
-        .then((res : any) => {
+        .get(
+          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=casper-network"
+        )
+        .then((res: any) => {
           const priceInDollars = cryptoPrice;
-          console.log()
-          const pricePerCSPR = parseFloat(
-            res.data[0].current_price
-          );
+          console.log();
+          const pricePerCSPR = parseFloat(res.data[0].current_price);
           const priceInCSPR = priceInDollars / pricePerCSPR;
           console.log(priceInCSPR);
           setPrice(Math.round(priceInCSPR));
         })
         .catch((e) => {
-          console.log(e)
+          console.log(e);
           setPrice(1218);
         });
     })();
@@ -442,7 +470,7 @@ export const BuyWindow = ({
           }, 3000);
         }
       } catch (e) {
-        console.log(e)
+        console.log(e);
         setIsLoading(false);
       }
       setIsLoading(false);
@@ -593,7 +621,7 @@ export const BuyWindow = ({
                 h="41px"
                 zIndex="0"
                 textAlign="center"
-                w={{ base: "auto"}}
+                w={{ base: "auto" }}
                 borderRadius="10px"
                 border="1px solid white"
                 defaultValue={amount}
@@ -657,6 +685,8 @@ export const BuyWindow = ({
                 disabled={isLoading}
               >
                 <option value="0">CASPER</option>
+                <option value="25">CRONOS</option>
+                {/*<option value="ARBITRUM">ARBITRUM</option>*/}
                 <option value="1">ETHEREUM</option>
                 <option value="56">BSC</option>
                 <option value="137">POLYGON</option>
@@ -670,7 +700,11 @@ export const BuyWindow = ({
                 disabled={isLoading}
               >
                 {currencies.map((el: any) => {
-                  return <option key={el.address} value={el.address}>{el.symbol}</option>;
+                  return (
+                    <option key={el.address} value={el.address}>
+                      {el.symbol}
+                    </option>
+                  );
                 })}
               </Select>
             </Flex>

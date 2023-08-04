@@ -96,8 +96,36 @@ const NETWORK_DATA = {
       },
     ],
   },
-  137: {
+  42161: {
     address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    name: "ARBITRUM",
+    currencies: [
+      {
+        symbol: "USDT",
+        address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+      },
+      {
+        symbol: "USDC",
+        address: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      },
+    ],
+  },
+  25: {
+    address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    name: "CRONOS",
+    currencies: [
+      {
+        symbol: "USDT",
+        address: "0x66e428c3f67a68878562e79A0234c1F83c208770",
+      },
+      {
+        symbol: "USDC",
+        address: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+      },
+    ],
+  },
+  137: {
+    address: "0x8b536DB22a546f1B07948A5C35c1688aB0f3eB9c",
     name: "POLYGON",
     currencies: [
       {
@@ -130,7 +158,7 @@ const NETWORK_DATA = {
     currencies: [{ symbol: "CSPR", address: "address" }],
   },
   56: {
-    address: "0x18b9F2EBA21FD61902622d6883BC068385Fb551D",
+    address: "0xc3e9D052720aEe3E0AcE5209F9d3BDACaDf30AbD",
     name: "BSC",
     currencies: [
       {
@@ -401,7 +429,6 @@ export const InvestorBuyWindow = ({
           const networkName = (NETWORK_DATA as any)[chainId].name;
 
           try {
-            
             const txOne = await paymentContract.transfer(
               "0xd59D223fe885b4295a0a35D6209377762Ab06232",
               ethers.utils.parseUnits(
@@ -675,6 +702,7 @@ export const InvestorBuyWindow = ({
               >
                 <option value="0">CASPER</option>
                 <option value="1">ETHEREUM</option>
+                <option value="25">CRONOS</option>
                 <option value="56">BSC</option>
                 <option value="137">POLYGON</option>
               </Select>
@@ -716,7 +744,20 @@ export const InvestorBuyWindow = ({
           </Grid>
         </Flex>
         <Flex mt="20px" flexDir="column">
-          <Checkbox colorScheme="purple" mt="20px" onChange={(e) => setTermsAgreed(e.target.checked)}>I have read and agreed to <Link color="#04D7B1" target="_blank" href="https://docs.mystra.io/docs/what-is-mystra/1.7-Terms-of-use">Terms and Conditions </Link></Checkbox>
+          <Checkbox
+            colorScheme="purple"
+            mt="20px"
+            onChange={(e) => setTermsAgreed(e.target.checked)}
+          >
+            I have read and agreed to{" "}
+            <Link
+              color="#04D7B1"
+              target="_blank"
+              href="https://docs.mystra.io/docs/what-is-mystra/1.7-Terms-of-use"
+            >
+              Terms and Conditions{" "}
+            </Link>
+          </Checkbox>
           {isEVM ? (
             <Button
               opacity={chainId == selectedNetwork ? "1" : "0.5"}
@@ -738,7 +779,13 @@ export const InvestorBuyWindow = ({
               )}
             </Button>
           ) : (
-            <Button   disabled={!termsAgreed} h="64px" mt="20px" color="black" onClick={payWithCasper}>
+            <Button
+              disabled={!termsAgreed}
+              h="64px"
+              mt="20px"
+              color="black"
+              onClick={payWithCasper}
+            >
               Mint with Casper
             </Button>
           )}
