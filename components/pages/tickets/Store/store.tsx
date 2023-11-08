@@ -70,9 +70,9 @@ export const Store = () => {
   }, []);
 
   return (
-    <Box margin="0 auto" id="buy_ticket">
+    <Box margin="0 auto" id="buy_ticket" mb="80px">
       <CenterContainer>
-        <Flex
+        {/* <Flex
           flexDir="column"
           bg="
 rgba(18, 18, 18, 0.7)
@@ -132,7 +132,74 @@ rgba(18, 18, 18, 0.7)
             cryptoPrice={cryptoPrice}
             setAmountGot={setAmountGot}
           />
-        </Flex>
+        </Flex> */}
+        <Grid
+          flexDir="column"
+          bg="
+rgba(18, 18, 18, 0.7)
+"
+          borderRadius="8px"
+          border="1px solid"
+          h={{ base: "auto", md: "350px", lg: "320px" }}
+          borderColor={"rgba(40,40,40,1)"}
+          padding={{
+            base: "0px 27px 0px 27px",
+            md: "0px 66px 0px 66px",
+            lg: "0px 66px 0px 66px",
+          }}
+          templateColumns={{ base: "1fr", lg: "1fr 1fr" }}
+        >
+          <Flex py={{ base: "27px", md: "50px" }} flexDir="column">
+            <Box fontSize="24px " fontWeight="Bold" fontFamily="Sora">
+              Mystra NFT Ticket Public Sale
+            </Box>
+            <Box mt="20px" opacity="0.6" fontSize="18px">
+              The NFT minting will be available quite soon...
+              <br /> Please wait patiently and stay vigilant.
+            </Box>
+
+            <Link href="https://twitter.com/mystra_io">
+              <Button
+                mb="20px"
+                mt="30px"
+                fontWeight="400"
+                bg="white"
+                alignSelf="flex-start"
+                px="40px"
+                color="black"
+                gap="10px"
+                fontSize="14px"
+              >
+                <Image src="/assets/icons/xlogos.svg" h="14px" />
+                Follow Mystra for the newest updates
+              </Button>
+            </Link>
+            <Link
+              display="flex"
+              alignItems="center"
+              gap="10px"
+              target={"_blank"}
+              href="https://newsletter.casperarmy.org/subscription/form"
+            >
+              Subscribe to Newsletter{" "}
+              <Image w="18px" src="/assets/icons/Envelope.svg" />
+            </Link>
+          </Flex>
+          <Flex
+            overflow="hidden"
+            h={{ base: "auto", md: "350px", lg: "320px" }}
+            align="center"
+            justify="center"
+            display={{ base: "none", lg: "flex" }}
+          >
+            <Image
+              w="450px"
+              transform="rotate(10deg)"
+              filter={"grayscale(1)"}
+              src="/assets/elements/mystra_ticket.png"
+            />
+          </Flex>
+        </Grid>
       </CenterContainer>
     </Box>
     //     <CenterContainer>
