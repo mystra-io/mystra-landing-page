@@ -50,9 +50,9 @@ export const PageHeader = () => {
               textTransform="uppercase"
               alignItems="center"
             >
-              <Link  href="/#buy_ticket">
+              <Link href="/#buy_ticket">
                 <Button
-				textDecoration="none !important"
+                  textDecoration="none !important"
                   _hover={{ bg: "#946AED" }}
                   p={{ base: "0px 17px 0px 20px", md: "0px 28px 0px 37px" }}
                   gap="20px"
@@ -65,10 +65,13 @@ export const PageHeader = () => {
                   textTransform="uppercase"
                   bg="radial-gradient(150% 150% at 50.21% 50%, rgba(138, 69, 251, 0) 0%, #946AED 100%)"
                 >
-                  Mint a NFT Ticket <ArrowForwardIcon />
+                  Mint an NFT Ticket <ArrowForwardIcon />
                 </Button>
               </Link>
-              <Link target="_blank" href="https://docs.mystra.io/docs/MEMBERSHIP/4.2-For-investors">
+              <Link
+                target="_blank"
+                href="https://docs.mystra.io/docs/MEMBERSHIP/4.2-For-investors"
+              >
                 <Box
                   fontFamily="Syne"
                   cursor="pointer"
